@@ -1,0 +1,7 @@
+Component Create
+exporting and importing components
+Including one component in another
+Passing values from parent to child -> prop drilling -> props -> App to Book passing parameters
+Passing Once Component in another component as children
+destructuring -> {a,b,c}
+using dynamic values in react like {} . and {{}} for objects for style attributes

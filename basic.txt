@@ -1,0 +1,9 @@
+React is a Single Page Application
+It is a combination of components
+We use props to pass variables from one component to another component
+index.html and index.js will be loaded first
+
+JSX -> Javascript extension
+
+
+index.html -> index.js (App)
