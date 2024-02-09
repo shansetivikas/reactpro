@@ -7,3 +7,7 @@ JSX -> Javascript extension
 
 
 index.html -> index.js (App)
+
+
+events
+ternary
