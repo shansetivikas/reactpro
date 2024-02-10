@@ -1,54 +1,25 @@
-// import React from 'react';
-// import Book from './Book';
-// // import CardView from './CardView';
-// // import Card from './Card';
-
-import Button from "./Button";
-// import School from "./School";
-
-// const App = () => {
-//   const dataMessage = "try this book";
-//   const testVar = 1;
-//   const imgPath = "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png";
-//   const details = {
-//     name: 'test',
-//     address: 'hyderabad'
-//   };
-//   const altText = "test"
-//   const dummyVar = 2;
-//   const data1 = [1,2,3];
-//   return (
-//     <>
-//      <p>{details.name}</p>
-//       <p style={{backgroundColor:'blue'}}>App {altText}</p>
-//       <img src={imgPath} alt="test"/>
-//       <Book message={dataMessage} testVar={testVar} ></Book> 
-//     </>
-//     <Card>
-//       <CardView></CardView>
-//       <CardView></CardView>
-//     </Card>
-//   )
-// }
-
+// import ClassRoom from "./ClassRoom"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import Contact from "./Contact";
+import Error from "./Error";
 
 const App = () => {
 
-    // let schoolName = 'Akshara'
-    
-    // return (
-    //      <School name={schoolName}></School>
-    // )
-
-    const handleClick = (a) => {
-      alert(a);
-        // alert("clicked here")
-    }
-
-    return(
-      <Button clickFn={handleClick}></Button>
-    )
+  return (
+    <>
+     <Router>
+        {/* <p>Hello</p>
+        <ClassRoom schlname = "delhi"></ClassRoom> */}
+        
+        <Routes>
+           <Route path="/" element={<Home />}></Route>
+           <Route path="/contact" element={<Contact />}></Route>
+           <Route path="*" element={<Error />}></Route>
+        </Routes>
+      </Router>
+    </>
+  )
 }
-
 
 export default App;

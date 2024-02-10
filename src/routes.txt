@@ -1,0 +1,24 @@
+->  npm install react-router-dom@6
+-> import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+Syntax:
+
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Card from "./Card";
+import CardView from "./CardView";
+import { NavLink } from "react-router-dom";
+
+const App = () => {
+   return (
+    <Router>
+      <p>Hello</p>
+      <Routes>
+        <Route path="/" element={<Card />}></Route>
+        <Route path="/home" element={<CardView />}></Route>
+        <Route path="*"  element={<CardView />}></Route>
+      </Routes>
+    </Router>
+   )
+}
+
+export default App;

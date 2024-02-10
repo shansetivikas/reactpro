@@ -1,15 +1,27 @@
+const Student = ({stdnames}) => {
 
+    // const stdData = stdnames.map((student) => {
+    //     return <li>{student}</li>
+    // });
 
-const Student = ({studentDetails}) => {
-    
+    const stdData = stdnames.map((student) => {
+       return (
+          <tr>
+            <td>{student.name}</td>
+            <td>{student.age}</td>
+          </tr>
+       )
+    })
 
-    const students = studentDetails.map(student => 
-        <li>{student}</li>
-    );
-    return <ul>{students}</ul>
-
-
+     return(
+        <>
+            <table>
+                {stdData}
+            </table>
+           
+            {/* <ul>{stdData}</ul> */}
+        </>
+     )
 }
-
 
 export default Student;
