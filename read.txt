@@ -1,0 +1,12 @@
+index.html -> index.js -> APP com or any other component
+
+props -> prop drilling
+
+passing variables or functions from parent to child
+
+<Hello test={test} >
+
+useLocation
+useParams
+useNavigate -> <Link to />
+

@@ -1,23 +1,21 @@
-// import ClassRoom from "./ClassRoom"
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route
+ } from "react-router-dom";
 import Home from "./Home";
+import Navigation from "./Navigation";
 import Contact from "./Contact";
-import Error from "./Error";
+
 
 const App = () => {
 
   return (
     <>
-     <Router>
-        {/* <p>Hello</p>
-        <ClassRoom schlname = "delhi"></ClassRoom> */}
-        
-        <Routes>
-           <Route path="/" element={<Home />}></Route>
-           <Route path="/contact" element={<Contact />}></Route>
-           <Route path="*" element={<Error />}></Route>
-        </Routes>
-      </Router>
+      <BrowserRouter>
+        <Navigation />
+            <Routes>
+               <Route path="/" element={<Home />}></Route>
+               <Route path="/contact" element={<Contact />}></Route>
+            </Routes>
+      </BrowserRouter>
     </>
   )
 }
